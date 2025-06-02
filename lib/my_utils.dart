@@ -54,6 +54,12 @@ class MyUtils {
     }
   }
 
+  void err(String msg) {
+    if (kDebugMode) {
+      debugPrint('[ERROR] $msg');
+    }
+  }
+
   String listIntToString(List<int> list) {
     return utf8.decode(list);
   }
@@ -90,12 +96,13 @@ class MyUtils {
   //   }
   // }
 
-  Divider divider(
-      {double thickness = 2.0,
-      double height = 30.0,
-      double indent = 10.0,
-      double endIndent = 20.0,
-      Color color = Colors.green}) {
+  Divider divider({
+    double thickness = 2.0,
+    double height = 30.0,
+    double indent = 10.0,
+    double endIndent = 20.0,
+    Color color = Colors.green,
+  }) {
     // final thickness0 = thickness;
     // final height;
     // final indent;
@@ -103,10 +110,11 @@ class MyUtils {
     // final color;
 
     return Divider(
-        thickness: thickness,
-        color: color,
-        height: height,
-        indent: indent,
-        endIndent: endIndent);
+      thickness: thickness,
+      color: color,
+      height: height,
+      indent: indent,
+      endIndent: endIndent,
+    );
   }
 }

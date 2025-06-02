@@ -8,47 +8,37 @@ class ButtonScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Row(
-        children: [
-          // Container(color: Colors.black, child: WIDTH(20)),
-          WIDTH(20),
+    return Row(
+      children: [
+        WIDTH(20),
 
-          // ElevatedButton
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              ElevatedButton(
-                onPressed: () {
-                  utils.log("ElevatedButton clicked!!!");
-                },
-                child: const Text("Elevated Button"),
-              ),
-              HEIGHT(10),
-              ElevatedButton(
-                onPressed: () {
-                  utils.log("ElevatedButton Rectangle clicked!!!");
-                },
-                style: ElevatedButton.styleFrom(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(0),
-                  ),
-                  elevation: 1.0, // louiey. Shadow
-                  backgroundColor: Colors.amber,
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                utils.log("ElevatedButton clicked!!!");
+              },
+              child: const Text("Elevated Button"),
+            ),
+            HEIGHT(10),
+            ElevatedButton(
+              onPressed: () {
+                utils.log("ElevatedButton Rectangle clicked!!!");
+              },
+              style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(0),
                 ),
-                child: const Text("Elevated Rectangle"),
+                elevation: 1.0, // louiey. Shadow
+                backgroundColor: Colors.amber,
               ),
-              HEIGHT(10),
-              const CustomElevatedButton(
-                width: 80,
-                height: 30,
-                name: "Test",
-                cb: Text("Clicked!!!"),
-              ),
-            ],
-          ),
-        ],
-      ),
+              child: const Text("Elevated Rectangle"),
+            ),
+            HEIGHT(10),
+          ],
+        ),
+      ],
     );
   }
 }

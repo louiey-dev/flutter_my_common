@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_my_common/screens/button_screen.dart';
 import 'package:flutter_my_common/screens/chart_screen.dart';
+import 'package:flutter_my_common/screens/feature_screen.dart';
 import 'package:flutter_my_common/screens/preference_chart.dart';
 import 'package:flutter_my_common/screens/switch_screen.dart';
 
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'My Common Items for Reference',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -41,6 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
     SwitchScreen(),
     ChartScreen(),
     PreferenceScreen(),
+    FeatureScreen(),
   ];
 
   void _onItemTapped(int index) {
@@ -75,6 +78,10 @@ class _MyHomePageState extends State<MyHomePage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.settings_applications_outlined),
             label: "Preference",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.featured_play_list),
+            label: "Feature",
           ),
         ],
         currentIndex: _selectedIndex,
