@@ -26,4 +26,4 @@ https://github.com/louiey-dev/flutter_my_common.git
 - 2025.06.27
   - Added event wait/set function
   - It'll be useful when test sync sequences
-  - 
+  - Updated button screen...added more buttons
