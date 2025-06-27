@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_my_common/feature/log_file.dart';
+import 'package:flutter_my_common/feature/log_file_control.dart';
 import 'package:intl/intl.dart';
 import 'package:path_provider/path_provider.dart';
 

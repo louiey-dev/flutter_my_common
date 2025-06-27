@@ -23,4 +23,7 @@ https://github.com/louiey-dev/flutter_my_common.git
 - 2025.03.07 : First created
 - 2025.06.02
   - Log file control class added
-- 
+- 2025.06.27
+  - Added event wait/set function
+  - It'll be useful when test sync sequences
+  - 

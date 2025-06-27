@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-Widget WIDTH(double width) {
+Widget myWIDTH(double width) {
   return SizedBox(width: width);
 }
 
-Widget HEIGHT(double height) {
+Widget myHEIGHT(double height) {
   return SizedBox(height: height);
 }
