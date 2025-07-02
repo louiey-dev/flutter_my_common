@@ -27,3 +27,8 @@ https://github.com/louiey-dev/flutter_my_common.git
   - Added event wait/set function
   - It'll be useful when test sync sequences
   - Updated button screen...added more buttons
+- 2025.07.02
+  - chart added using fl_chart
+  - thermal image function added
+    - I generated random number and used to display but it returns error, invalid data
+    - I need to normalize random number and need to map image data to fit data format
