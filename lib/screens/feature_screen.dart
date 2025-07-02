@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_my_common/feature/thermal_image.dart';
 import 'package:flutter_my_common/screens/log_screen.dart';
+import 'package:flutter_my_common/widget/my_widget.dart';
 
 class FeatureScreen extends StatefulWidget {
   const FeatureScreen({super.key});
@@ -24,6 +26,17 @@ class _FeatureScreenState extends State<FeatureScreen> {
             },
             icon: const Icon(Icons.save_alt),
             label: const Text("Log Screen"),
+          ),
+          myHEIGHT(10),
+          ElevatedButton.icon(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ThermalImage()),
+              );
+            },
+            icon: const Icon(Icons.thermostat_auto_outlined),
+            label: const Text("Thermal Image"),
           ),
         ],
       ),
