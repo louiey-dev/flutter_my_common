@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_my_common/screens/button_screen.dart';
 import 'package:flutter_my_common/screens/chart_screen.dart';
+import 'package:flutter_my_common/screens/etc_screen.dart';
 import 'package:flutter_my_common/screens/event_screen.dart';
 import 'package:flutter_my_common/screens/feature_screen.dart';
 import 'package:flutter_my_common/screens/preference_chart.dart';
@@ -45,6 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
   List myScreens = [
     ButtonScreen(),
     SwitchScreen(),
+    EtcScreen(),
     ChartScreen(),
     PreferenceScreen(),
     FeatureScreen(),
@@ -75,6 +77,10 @@ class _MyHomePageState extends State<MyHomePage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.toggle_on_outlined),
             label: "Switch",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.restaurant_menu),
+            label: "UI Etc",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.auto_graph_outlined),

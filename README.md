@@ -12,8 +12,6 @@ https://github.com/louiey-dev/flutter_my_common.git
 
 
 ## TO DO
-- Switch screen
-- Chart screen
 - Preference Screen
 - Go router
 - Riverpod
@@ -32,3 +30,11 @@ https://github.com/louiey-dev/flutter_my_common.git
   - thermal image function added
     - I generated random number and used to display but it returns error, invalid data
     - I need to normalize random number and need to map image data to fit data format
+- 2025.07.07
+  - Switch screen added
+    - Default flutter switches and packages in pub.dev
+  - Chart screen
+    - fl_chart package added (bar/line/pie)
+  - UI Etc screen added
+    - Added UI components which are used normally
+    - card/dialog/gesture/grid/inkwell/listtile/listview/progress indicator/radio/slider/snackbar

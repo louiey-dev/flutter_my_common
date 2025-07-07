@@ -45,6 +45,12 @@ class _ButtonScreenState extends State<ButtonScreen> {
       padding: const EdgeInsets.all(10.0),
       child: Column(
         children: [
+          const Text(
+            "Button Screen",
+            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          ),
+          myHEIGHT(20),
+
           /// Elevated Buttons
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
